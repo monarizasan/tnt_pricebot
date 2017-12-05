@@ -30,7 +30,7 @@ def get_tntprice():
     huobi_sat = int(float(json_huobi['tick']['data'][0]['price']*10**8))
     huobi = 'Huobi:  ' + "%.8f" % float(huobi_sat/10**8) + ' BTC'
     
-    tweet = liqui + '\n' + binance + '\n' + huobi
+    tweet = 'Current prices of TNT are' + '\n' + '\n' + liqui + '\n' + binance + '\n' + huobi + '\n' + '\n' + '$TNT #Tierion'
     
     return tweet
 
